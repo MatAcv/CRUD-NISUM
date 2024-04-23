@@ -1,0 +1,15 @@
+<mat-dialog-content>
+    <div class="container">
+      <h1>Actualizar Imagen</h1>
+      <mat-form-field>
+        <input matInput placeholder="URL de la imagen" name="totalImgPath"  [(ngModel)]="newUrl"/>
+      </mat-form-field>
+    </div>
+  </mat-dialog-content>
+  <mat-dialog-actions align="end">
+    <div class="row justify-content-center">
+      <button mat-button color="primary" (click)="actualizarPelicula()">Actualizar</button>
+      <button mat-button color="warn" (click)="cancelarActualizar()">Cancelar</button>
+    </div>
+  </mat-dialog-actions>
+  

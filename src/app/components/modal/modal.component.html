@@ -1,0 +1,19 @@
+<mat-dialog-content style="text-align: center;">
+    <div class="container">
+      <h1>Agregar Película</h1>
+      <mat-form-field style="margin-right: 10px;">
+        <input matInput placeholder="Nombre de la película" [(ngModel)]="data.title" name="title" />
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="URL de la imagen" [(ngModel)]="data.totalImgPath" name="totalImgPath" />
+      </mat-form-field>
+      
+    </div>
+  </mat-dialog-content>
+  <mat-dialog-actions align="end">
+    <div class="row justify-content-center">
+      <button mat-button color="primary" (click)="agregarPelicula()">Agregar</button>
+      <button mat-button color="warn" (click)="cancelarAgregar()">Cancelar</button>
+    </div>
+  </mat-dialog-actions>
+  

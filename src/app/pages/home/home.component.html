@@ -1,0 +1,36 @@
+<div class="d-flex justify-content-center align-items-center w-100 buttons-funct ">
+    <div class="row ">
+      <div class="col text-center" style="margin-top: 1% !important;">
+        <button mat-flat-button color="primary" (click)="openDialog()" >Agregar Pelicula</button>
+        <button style="margin-left: 1%;" mat-flat-button color="primary" (click)="reiniciarCartelera()">Reiniciar Cartelera</button>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="peliculas-container">
+    <mat-card class="pelicula-card" *ngFor="let pelicula of peliculas; let i = index">
+      <img width="400px" height="600px" class="img-fluid"  [src]="isValidImageUrls(pelicula.totalImgPath) ? pelicula.totalImgPath : 'assets/img/no-img.png'"  mat-card-image />
+      <mat-card-content>
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center">
+            <ng-container *ngIf="pelicula !== peliculaEditando || !edicionTitulo; else editarTitulo">
+              <h3 class="mt-2 mr-3" (click)="iniciarEdicion(pelicula)">{{ pelicula.title }}</h3>
+            </ng-container>
+            <ng-template #editarTitulo>
+              <input  id="tituloInput" type="text" class="form-control" [(ngModel)]="tituloEditado" (keyup.enter)="guardarEdicion()" (blur)="guardarEdicion()" />
+            </ng-template>
+          </div>
+          <button mat-icon-button color="warn" (click)="iniciarEdicion(pelicula)">
+            <mat-icon>edit</mat-icon>
+          </button>
+          <button mat-icon-button color="warn" (click)="eliminarPelicula(pelicula)">
+            <mat-icon>delete</mat-icon>
+          </button>
+          <button mat-icon-button color="warn" (click)="editarImagen(pelicula)">
+            <mat-icon>image</mat-icon>
+          </button>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>

@@ -1,0 +1,35 @@
+.peliculas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrar las carteleras */
+  }
+  
+  .pelicula-card {
+    margin: 10px;
+  }
+  
+
+  .mat-card-mobile {
+    width: 100%;
+    max-width: 300px; /* Ancho máximo de la tarjeta */
+    margin-bottom: 20px; /* Espacio entre tarjetas */
+  }
+  
+  @media (min-width: 600px) {
+    .mat-card-mobile {
+      max-width: 400px; /* Ancho máximo de la tarjeta para pantallas más grandes */
+    }
+  }
+  
+  @media (min-width: 960px) {
+    .mat-card-mobile {
+      max-width: 600px; /* Ancho máximo de la tarjeta para pantallas aún más grandes */
+    }
+  }
+  
+
+  .buttons-funct{
+    text-align: center;
+  }
+
+  
