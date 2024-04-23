@@ -5,12 +5,12 @@ documentación clara.
 
 ## Funcionalidades
 
-La aplicacion permite:
--Hacer un fetch de todas las peliculas en cartelera y próximos estrenos. 
--Editar Nombre e imagen de poster de la pelicula seleccionada.
--Eliminar pelicula seleccionada.
--Agregar una nueva pelicula.
--Reiniciar peliculas a su estado original.
+La aplicación permite:
+- Hacer un fetch de todas las películas en cartelera y próximos estrenos.
+- Editar Nombre e imagen de poster de la película seleccionada.
+- Eliminar película seleccionada.
+- Agregar una nueva película.
+- Reiniciar películas a su estado original.
 
 ## Almacenamiento y manejo de peliculas.
 
