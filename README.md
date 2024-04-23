@@ -1,4 +1,4 @@
-# CRUDMG
+# Aplicacion CRUD de Películas en estreno (NISUM)
 
 El actual proyecto contiene un CRUD utilizando la api de TheMobieDB (https://api.themoviedb.org/). El motivo del uso de esta API es por su rapida implementacion y
 documentación clara.
